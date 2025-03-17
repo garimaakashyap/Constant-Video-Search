@@ -1,0 +1,46 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateVideo($filter: ModelSubscriptionVideoFilterInput) {
+  onCreateVideo(filter: $filter) {
+    id
+    unique_id
+    inputText
+    description
+    thumbnailUrl
+    videoUrl
+    uploading_time
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateVideo($filter: ModelSubscriptionVideoFilterInput) {
+  onUpdateVideo(filter: $filter) {
+    id
+    unique_id
+    inputText
+    description
+    thumbnailUrl
+    videoUrl
+    uploading_time
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteVideo($filter: ModelSubscriptionVideoFilterInput) {
+  onDeleteVideo(filter: $filter) {
+    id
+    unique_id
+    inputText
+    description
+    thumbnailUrl
+    videoUrl
+    uploading_time
+    createdAt
+    updatedAt
+    __typename
+  }
+}

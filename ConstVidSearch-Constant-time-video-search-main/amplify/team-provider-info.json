@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fragments-dev-3150b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::597088047879:role/amplify-fragments-dev-3150b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::597088047879:role/amplify-fragments-dev-3150b-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-fragments-dev-3150b-deployment",
+      "UnauthRoleName": "amplify-fragments-dev-3150b-unauthRole",
+      "StackName": "amplify-fragments-dev-3150b",
+      "StackId": "arn:aws:cloudformation:ap-south-1:597088047879:stack/amplify-fragments-dev-3150b/47e00a00-e3b7-11ef-85c4-062658261f11",
+      "AmplifyAppId": "d2npmr4qcpagby"
+    },
+    "categories": {
+      "api": {
+        "fragments": {}
+      }
+    }
+  }
+}

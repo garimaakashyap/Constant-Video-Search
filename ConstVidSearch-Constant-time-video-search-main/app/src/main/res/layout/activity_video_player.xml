@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Video Title -->
+    <TextView
+        android:id="@+id/videoTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <!-- Video Player -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true"
+        android:layout_below="@id/videoTitleTextView"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Channel Name and View Count -->
+    <TextView
+        android:id="@+id/channelNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Channel Name"
+        android:textSize="14sp"
+        android:layout_below="@id/player_view"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="16dp"
+        android:textColor="#757575"/>
+
+    <TextView
+        android:id="@+id/viewCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1M views"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/channelNameTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:textColor="#757575"/>
+
+    <!-- Action Buttons (Like, Dislike, Share, Download, Comment) -->
+    <LinearLayout
+        android:id="@+id/actionButtonsLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channelNameTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Like Button -->
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_like"
+            android:contentDescription="Like"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Dislike Button -->
+        <ImageView
+            android:id="@+id/dislikeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_dislike"
+            android:contentDescription="Dislike"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Share Button -->
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_share"
+        android:contentDescription="Share"
+        android:layout_marginEnd="16dp"/>
+
+        <!-- Download Button -->
+        <ImageView
+            android:id="@+id/downloadButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_download"
+            android:contentDescription="Download"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Comment Button -->
+        <ImageView
+            android:id="@+id/commentButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_comment"
+        android:contentDescription="Comment"/>
+    </LinearLayout>
+
+</RelativeLayout>

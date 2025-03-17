@@ -1,0 +1,106 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.fragments'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.fragments"
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/*.kotlin_module'
+        exclude 'META-INF/io.netty.versions.properties' // Add this line
+    }
+
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.media3.ui
+    implementation libs.media3.exoplayer
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    //Design
+
+    implementation 'com.google.android.material:material:1.10.0'
+
+    //TLS/ALPN connection
+    implementation 'io.netty:netty-tcnative-boringssl-static:2.0.61.Final'
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+
+    //http
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+    implementation 'org.eclipse.jetty:jetty-alpn-java-server:9.4.44.v20210927'
+
+    //aws sdk and For authentication
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.20.0'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.16.12'
+
+    // AWS S3 SDK
+    implementation 'com.amazonaws:aws-android-sdk-core:2.73.0'
+    implementation 'com.amazonaws:aws-android-sdk-auth-core:2.73.0'
+
+    implementation ('com.amazonaws:aws-android-sdk-s3:2.72.0') {
+        exclude group: 'com.amazonaws', module: 'aws-java-sdk-core' // AWS Core SDK
+
+    }
+
+    // For Cognito Identity
+    implementation 'software.amazon.awssdk:cognitoidentity:2.17.130'
+
+
+    // Pinecone installation
+    implementation "io.pinecone:pinecone-client:3.1.0"
+
+    //Amplify
+    implementation 'com.amplifyframework:core:2.1.0'
+    implementation 'com.amplifyframework:aws-api:2.1.0'
+    implementation 'com.amplifyframework:aws-datastore:2.1.0'
+
+    //Recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation "androidx.media3:media3-ui:1.5.1"
+
+
+}
