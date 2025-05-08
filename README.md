@@ -82,9 +82,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-- **GeeksforGeeks Profile**: (https://www.geeksforgeeks.org/user/garimamillicent/)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/yashwant-kumar-65b742205)
-- **GitHub**: [Your GitHub](https://github.com/your-username)
+- **GeeksforGeeks Profile**: [Your gfg](https://www.geeksforgeeks.org/user/garimamillicent/)
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/garima-kashyap-75b1202b8/)
+- **GitHub**: [Your GitHub](https://github.com/garimaakashyap)
 
 ---
 
